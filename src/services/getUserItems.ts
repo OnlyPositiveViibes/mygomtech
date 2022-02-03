@@ -8,10 +8,12 @@ export enum Roles {
 }
 
 export interface IItem {
+
   name: string,
   role: Roles,
   email: string,
   createdAt: string,
+  
 }
 
 const getUserItems = async (userId?: string): Promise<Array<IItem>> => {

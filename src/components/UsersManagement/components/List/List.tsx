@@ -21,7 +21,7 @@ const UpdateModal: FC<IUpdateModal> = ({ item }) => {
   return (
     <>
       <button className="update" onClick={() => setShowModal(true)}>
-        Update Password
+        Update Email
       </button>
       <Modal
         className="modal"
@@ -29,9 +29,9 @@ const UpdateModal: FC<IUpdateModal> = ({ item }) => {
         onRequestClose={() => setShowModal(false)}
         contentLabel="Example Modal"
       >
-        <h1>Update Password</h1>
+        <h1>Update Email</h1>
         <input
-          placeholder="new password"
+          placeholder="new email"
           className="input"
           value={newEmail}
           onChange={(event) => setNewEmail(event.target.value)} 
